@@ -34,6 +34,8 @@ We can see from the learnt topic model below that each topic has some pattern.
 ####Some images from each topic 6
 ![Topic 6](typ_images6.png)
 
+
+In the below images z refers to topics (1 to 6) and d refers to image (document) and w refers to feature(word).   
 ###Retrieval Example
 ####Similar images retrieved based on 1st image(titled 109) is 
 ![Image retrieved](figure1.png)

@@ -10,15 +10,15 @@ pLSA can be also applied to text, example it can cluster a series of articles in
 
 In this application the 1000 images are used to learn the topic model based on the coarse color histogram. Later the learnt model is used to retrieve k number of most similar images. Similar image here means, which are similar by topics. For this case 6 topics are chosen.
 
-We can see from the learnt topic model below that each topic has some pattern. 
-1. Topic 1 has brown shades as dominant color.
-2. Topic 2 has shades of light-ish green and some more assorted ones
-3. Topic 3 has shades of orange ? as dominant color. ( I think its orange)
-4. Topic 4 has shades of blue as dominant color. 
-5. Topic 5 has shades of grey as dominant color and some dark colors. (No pun(s) intended ;) 
-6. Topic 6 has shades of green as dominant color.
+We can see from the learnt topic model below that each topic has some pattern.  
+1. Topic 1 has brown shades as dominant color.  
+2. Topic 2 has shades of light-ish green and some more assorted ones.  
+3. Topic 3 has shades of orange ? as dominant color. ( I think its orange)  
+4. Topic 4 has shades of blue as dominant color.  
+5. Topic 5 has shades of grey as dominant color and some dark colors. (No pun(s) intended ;)   
+6. Topic 6 has shades of green as dominant color.    
 
-####Learnt 6 topic model is 
+####Learnt 6 topic model is   
 ![Topic model visualization](topic_visualization.png)
 
 ####Some images from each topic 1

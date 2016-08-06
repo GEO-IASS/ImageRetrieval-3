@@ -22,29 +22,29 @@ We can see from the learnt topic model below that each topic has some pattern.
 ![Topic model visualization](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/topic_visualization.png 'Visualization')
 
 ####Some images from each topic 1
-![Topic 1](typ_images1.png)
+![Topic 1](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/typ_images1.png)
 ####Some images from each topic 2
-![Topic 2](typ_images2.png)
+![Topic 2](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/typ_images2.png)
 ####Some images from each topic 3
-![Topic 3](typ_images3.png)
+![Topic 3](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/typ_images3.png)
 ####Some images from each topic 4
-![Topic 4](typ_images4.png)
+![Topic 4](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/typ_images4.png)
 ####Some images from each topic 5
-![Topic 5](typ_images5.png)
+![Topic 5](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/typ_images5.png)
 ####Some images from each topic 6
-![Topic 6](typ_images6.png)
+![Topic 6](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/typ_images6.png)
 
 
 In the below images z refers to topics (1 to 6) and d refers to image (document) and w refers to feature(word).   
 ###Retrieval Example
 ####Similar images retrieved based on 1st image(titled 109) is 
-![Image retrieved](figure1.png)
+![Image retrieved](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/figure1.png)
 
 ####Similar images retrieved based on 1st image(titled 59) is 
-![Image retrieved](figure2.png)
+![Image retrieved](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/figure2.png)
 
 ####Similar images retrieved based on 1st image(titled 44) is 
-![Image retrieved](figure3.png)
+![Image retrieved](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/figure3.png)
 
 
 

@@ -19,7 +19,7 @@ We can see from the learnt topic model below that each topic has some pattern.
 6. Topic 6 has shades of green as dominant color.    
 
 ####Learnt 6 topic model is   
-![Topic model visualization](https://github.com/harshkn/ImageRetrieval/blob/master/topic_visualization.png)
+![Topic model visualization](https://raw.githubusercontent.com/harshkn/ImageRetrieval/master/topic_visualization.png)
 
 ####Some images from each topic 1
 ![Topic 1](typ_images1.png)

@@ -33,11 +33,11 @@ viewTopics(Pw_z, Pz_d);
 
 %%
 showSimilarImages(Pz_d, [44, 59, 109], 5);
-% showSimilarImages(Pz_d, [40, 302, 800], 5);
-%%
+% showSimilarImages(Pz_d, [40, 302, 779], 5);
+
 h = get(0,'children');
 for i=1:length(h)
-  saveas(h(i), ['figure' num2str(i)], 'epsc');
+  saveas(h(i), ['figure' num2str(i)], 'png');
 end
 
 

@@ -17,15 +17,15 @@ for z = 1:ntopics
 %     title(sprintf('P(w|z) for z = %d', z));
 end
 % subtitle('Topic model visualization');
-print(t, '-depsc', 'topic_visualization.eps') 
+print(t, '-dpng', 'topic_visualization.png') 
 
 
 for z = 1:ntopics
     k = figure
     [~, idx] = sort(Pz_d(z,:), 'descend');
     showImages(Pz_d, idx(1:9));
-    fn = strcat('typ_images', int2str(z),'.eps');
-    print(k, '-depsc', fn)
+    fn = strcat('typ_images', int2str(z),'.png');
+    print(k, '-dpng', fn)
     
 %     subtitle('Typical imges for topic %d ', z);
 end

@@ -1,0 +1,12 @@
+function ids = query(Pz_q, Pz_d, k, q)
+
+for d = 1:length(Pz_d)
+    L(d) =  sum(abs(Pz_q- Pz_d(:,d)));
+end
+
+[~, idx]  = sort(L);
+ids = idx(1:k);
+% ids = [q ids(1:end-1)];
+
+
+end

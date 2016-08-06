@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Imageretrieval by harshkn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Imageretrieval</h1>
+        <p>Image retrieval using pLSA </p>
+
+        <p class="view"><a href="https://github.com/harshkn/ImageRetrieval">View the Project on GitHub <small>harshkn/ImageRetrieval</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/harshkn/ImageRetrieval/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/harshkn/ImageRetrieval/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/harshkn/ImageRetrieval">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="image-retrieval" class="anchor" href="#image-retrieval" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Image Retrieval</h1>
+
+<p>Image retrieval using pLSA </p>
+
+<p>The dataset used is first 1000 images of MIRFLICKR-25000 <a href="http://press.liacs.nl/mirflickr/mirflickr25k/mirflickr25k.zip">Link</a><br>
+It is an unsupervised learning algorithm by Probabilistic Latent Semantic Analysis. Check the <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/plsa.pdf">paper</a> for more.   </p>
+
+<p>Coarse color histogram quantized to 1000 levels is used as a feature. The 1000 levels used are [here]{<a href="https://github.com/harshkn/ImageRetrieval/blob/master/colors.csv">https://github.com/harshkn/ImageRetrieval/blob/master/colors.csv</a>)   </p>
+
+<p>pLSA can be also applied to text, example it can cluster a series of articles into various topics like sports, politics, movies etc. </p>
+
+<p>In this application the 1000 images are used to learn the topic model based on the coarse color histogram. Later the learnt model is used to retrieve k number of most similar images. Similar image here means, which are similar by topics. For this case 6 topics are chosen.</p>
+
+<p>We can see from the learnt topic model below that each topic has some pattern.<br>
+1. Topic 1 has brown shades as dominant color.<br>
+2. Topic 2 has shades of light-ish green and some more assorted ones.<br>
+3. Topic 3 has shades of orange ? as dominant color. ( I think its orange)<br>
+4. Topic 4 has shades of blue as dominant color.<br>
+5. Topic 5 has shades of grey as dominant color and some dark colors. (No pun(s) intended ;)<br>
+6. Topic 6 has shades of green as dominant color.    </p>
+
+<h4>
+<a id="learnt-6-topic-model-is" class="anchor" href="#learnt-6-topic-model-is" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Learnt 6 topic model is</h4>
+
+<p><img src="topic_visualization.png" alt="Topic model visualization"></p>
+
+<h4>
+<a id="some-images-from-each-topic-1" class="anchor" href="#some-images-from-each-topic-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some images from each topic 1</h4>
+
+<p><img src="typ_images1.png" alt="Topic 1"></p>
+
+<h4>
+<a id="some-images-from-each-topic-2" class="anchor" href="#some-images-from-each-topic-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some images from each topic 2</h4>
+
+<p><img src="typ_images2.png" alt="Topic 2"></p>
+
+<h4>
+<a id="some-images-from-each-topic-3" class="anchor" href="#some-images-from-each-topic-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some images from each topic 3</h4>
+
+<p><img src="typ_images3.png" alt="Topic 3"></p>
+
+<h4>
+<a id="some-images-from-each-topic-4" class="anchor" href="#some-images-from-each-topic-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some images from each topic 4</h4>
+
+<p><img src="typ_images4.png" alt="Topic 4"></p>
+
+<h4>
+<a id="some-images-from-each-topic-5" class="anchor" href="#some-images-from-each-topic-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some images from each topic 5</h4>
+
+<p><img src="typ_images5.png" alt="Topic 5"></p>
+
+<h4>
+<a id="some-images-from-each-topic-6" class="anchor" href="#some-images-from-each-topic-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some images from each topic 6</h4>
+
+<p><img src="typ_images6.png" alt="Topic 6"></p>
+
+<p>In the below images z refers to topics (1 to 6) and d refers to image (document) and w refers to feature(word).   </p>
+
+<h3>
+<a id="retrieval-example" class="anchor" href="#retrieval-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Retrieval Example</h3>
+
+<h4>
+<a id="similar-images-retrieved-based-on-1st-imagetitled-109-is" class="anchor" href="#similar-images-retrieved-based-on-1st-imagetitled-109-is" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Similar images retrieved based on 1st image(titled 109) is</h4>
+
+<p><img src="figure1.png" alt="Image retrieved"></p>
+
+<h4>
+<a id="similar-images-retrieved-based-on-1st-imagetitled-59-is" class="anchor" href="#similar-images-retrieved-based-on-1st-imagetitled-59-is" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Similar images retrieved based on 1st image(titled 59) is</h4>
+
+<p><img src="figure2.png" alt="Image retrieved"></p>
+
+<h4>
+<a id="similar-images-retrieved-based-on-1st-imagetitled-44-is" class="anchor" href="#similar-images-retrieved-based-on-1st-imagetitled-44-is" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Similar images retrieved based on 1st image(titled 44) is</h4>
+
+<p><img src="figure3.png" alt="Image retrieved"></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/harshkn">harshkn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

@@ -8,7 +8,7 @@ Coarse color histogram quantized to 1000 levels is used as a feature. The 1000 l
 
 pLSA can be also applied to text, example it can cluster a series of articles into various topics like sports, politics, movies etc. 
 
-In this application the 1000 images are used to learn the topic model based on the coarse color histogram. Later the learnt model is used to retrieve k number of most similar images. Similar image here means, which are similar by topics. For this case 6 topics are chosen.
+In this application the first 1000 images are used to learn the topic model based on the coarse color histogram. Later, the learnt model is used to retrieve k most similar images. Similar image means, which are similar by topics. For this application 6 topics are chosen.
 
 We can see from the learnt topic model below that each topic has some pattern.  
 1. Topic 1 has brown shades as dominant color.  
